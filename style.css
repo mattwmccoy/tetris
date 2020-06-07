@@ -1,0 +1,148 @@
+:root {
+    font-size: 1em;
+  }
+
+* {
+    box-sizing: border-box;
+  }
+
+*:focus {
+    outline: 0;
+}
+
+
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    margin: auto;
+    max-width: 60rem;
+    color: #d8edea;
+    background: radial-gradient(
+    circle,
+   #fc00ff,
+   #00dbde);
+}
+
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#start-button {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ddd;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient( 
+    #12c2e9,
+    #f64f59,
+    #c471ed);
+    box-shadow: 0 20px 50px #ddd;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+button:active {
+    outline: none;
+    transform:  translateX(-3px) translateY(1.4px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(
+        #ff0099,
+        #493240);
+    box-shadow: 0 20px 50px #ff0099;
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+}
+
+.tetromino {
+    background-color: blue;
+}
+
+.mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(
+    #8e9eab,
+    #eef2f3);
+    box-shadow: 0 20px 50px #ddd;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+}
+
+#rules {
+    font-size: 1.0rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-left: -10%;
+}
+
+footer {
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    .btn-mobile {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin: auto;
+    
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 1.2rem;
+        color: #ddd;
+        width: 175px;
+        height: 50px;
+        background: linear-gradient( 
+        #12c2e9,
+        #f64f59,
+        #c471ed);
+        box-shadow: 0 20px 50px #ddd;
+        border: none;
+        border-radius: 5px;
+    }
+    
+}
